@@ -1,0 +1,129 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 10posFPC:10POSFPC J1
+U 1 1 60439FEB
+P 4925 4275
+F 0 "J1" H 5433 4159 50  0000 L CNN
+F 1 "10POSFPC" H 5433 4068 50  0000 L CNN
+F 2 "10posFPC:10pins-flex" H 4925 4275 50  0001 C CNN
+F 3 "" H 4925 4275 50  0001 C CNN
+	1    4925 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 6043AB13
+P 5250 3750
+F 0 "C1" H 5342 3796 50  0000 L CNN
+F 1 "0.1uF" H 5342 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5250 3750 50  0001 C CNN
+F 3 "~" H 5250 3750 50  0001 C CNN
+	1    5250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Humidity:SHTC3 U1
+U 1 1 6043AF67
+P 4625 3725
+F 0 "U1" H 4869 3771 50  0000 L CNN
+F 1 "SHTC3" H 4869 3680 50  0000 L CNN
+F 2 "Sensor_Humidity:Sensirion_DFN-4-1EP_2x2mm_P1mm_EP0.7x1.6mm" H 4825 3375 50  0001 C CNN
+F 3 "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/0_Datasheets/Humidity/Sensirion_Humidity_Sensors_SHTC3_Datasheet.pdf" H 4325 4175 50  0001 C CNN
+	1    4625 3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 6043C0C5
+P 4725 4025
+F 0 "#PWR0101" H 4725 3775 50  0001 C CNN
+F 1 "GND" H 4730 3852 50  0000 C CNN
+F 2 "" H 4725 4025 50  0001 C CNN
+F 3 "" H 4725 4025 50  0001 C CNN
+	1    4725 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6043C4D2
+P 4475 4275
+F 0 "#PWR0102" H 4475 4025 50  0001 C CNN
+F 1 "GND" V 4480 4147 50  0000 R CNN
+F 2 "" H 4475 4275 50  0001 C CNN
+F 3 "" H 4475 4275 50  0001 C CNN
+	1    4475 4275
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 6043CB24
+P 4725 3425
+F 0 "#PWR0103" H 4725 3275 50  0001 C CNN
+F 1 "+3.3V" H 4740 3598 50  0000 C CNN
+F 2 "" H 4725 3425 50  0001 C CNN
+F 3 "" H 4725 3425 50  0001 C CNN
+	1    4725 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 6043CE6C
+P 5375 4275
+F 0 "#PWR0104" H 5375 4125 50  0001 C CNN
+F 1 "+3.3V" H 5390 4448 50  0000 C CNN
+F 2 "" H 5375 4275 50  0001 C CNN
+F 3 "" H 5375 4275 50  0001 C CNN
+	1    5375 4275
+	1    0    0    -1  
+$EndComp
+Text Label 5175 4275 1    50   ~ 0
+SCL
+Text Label 5275 4275 1    50   ~ 0
+SDA
+Text Label 4325 3825 2    50   ~ 0
+SDA
+Text Label 4325 3625 2    50   ~ 0
+SCL
+NoConn ~ 4575 4275
+NoConn ~ 4675 4275
+NoConn ~ 4775 4275
+NoConn ~ 4875 4275
+NoConn ~ 4975 4275
+NoConn ~ 5075 4275
+$Comp
+L power:GND #PWR?
+U 1 1 6043F21B
+P 5250 3850
+F 0 "#PWR?" H 5250 3600 50  0001 C CNN
+F 1 "GND" H 5255 3677 50  0000 C CNN
+F 2 "" H 5250 3850 50  0001 C CNN
+F 3 "" H 5250 3850 50  0001 C CNN
+	1    5250 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6043F5D4
+P 5250 3650
+F 0 "#PWR?" H 5250 3500 50  0001 C CNN
+F 1 "+3.3V" H 5265 3823 50  0000 C CNN
+F 2 "" H 5250 3650 50  0001 C CNN
+F 3 "" H 5250 3650 50  0001 C CNN
+	1    5250 3650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
